@@ -53,35 +53,19 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // Handle strength-item hover effects
+  // Handle strength-item click toggle
   strengthItems.forEach(item => {
-    item.addEventListener('mouseenter', () => {
-      strengthItems.forEach(s => {
-        if (s !== item) {
-          s.classList.add('faded-out');
-        }
+    const toggleBtn = item.querySelector('.strength-toggle');
+    if (toggleBtn) {
+      toggleBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        item.classList.toggle('expanded');
       });
-      // Also fade other sections
-      cardPopables.forEach(card => card.classList.add('faded-out'));
-      document.querySelectorAll('.summary-section, .section-block').forEach(section => {
-        if (!section.querySelector('.strength-item')) {
-          section.classList.add('faded-out');
-        }
-      });
-      if (hero) {
-        hero.classList.add('faded-out');
-      }
-    });
+    }
     
-    item.addEventListener('mouseleave', () => {
-      strengthItems.forEach(s => s.classList.remove('faded-out'));
-      cardPopables.forEach(card => card.classList.remove('faded-out'));
-      document.querySelectorAll('.summary-section, .section-block').forEach(section => {
-        section.classList.remove('faded-out');
-      });
-      if (hero) {
-        hero.classList.remove('faded-out');
-      }
+    // Also allow clicking on the item itself to toggle
+    item.addEventListener('click', () => {
+      item.classList.toggle('expanded');
     });
   });
 

@@ -5,34 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Spandan Sedai</title>
-  <link rel="stylesheet" href="styles.css?v=2">
-  <style>
-    .resume-btn {
-      background: #000000 !important;
-      color: #ffffff !important;
-      padding: 14px 24px !important;
-      border-radius: 999px !important;
-      display: inline-flex !important;
-      align-items: center !important;
-      justify-content: center !important;
-      box-shadow: 0 18px 36px rgba(0, 0, 0, 0.18) !important;
-      text-decoration: none !important;
-    }
-    .resume-btn:hover,
-    .resume-btn:focus-visible {
-      background: #111111 !important;
-      transform: translateY(-1px) !important;
-    }
-    .animate {
-      opacity: 0;
-      transform: translateY(32px);
-      transition: opacity 0.75s ease-out, transform 0.75s ease-out;
-    }
-    .animate.animate-visible {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  </style>
+  <link rel="stylesheet" href="styles.css?v=3">
 </head>
 <body>
   <div class="page-frame">
@@ -104,24 +77,39 @@
       <h2>Strengths</h2>
       <div class="strengths-list">
         <div class="strength-item">
-          <h4>Quick learner</h4>
-          <p>Ability to rapidly acquire new skills and knowledge, adapting quickly to different technologies and environments.</p>
+          <div class="strength-header">
+            <h4>Quick learner</h4>
+            <button class="strength-toggle" aria-label="Toggle details">+</button>
+          </div>
+          <p class="strength-description">Ability to rapidly acquire new skills and knowledge, adapting quickly to different technologies and environments.</p>
         </div>
         <div class="strength-item">
-          <h4>Responsible</h4>
-          <p>Dependable and accountable, taking ownership of tasks and delivering reliable results consistently.</p>
+          <div class="strength-header">
+            <h4>Responsible</h4>
+            <button class="strength-toggle" aria-label="Toggle details">+</button>
+          </div>
+          <p class="strength-description">Dependable and accountable, taking ownership of tasks and delivering reliable results consistently.</p>
         </div>
         <div class="strength-item">
-          <h4>Detail oriented</h4>
-          <p>Careful attention to precision and accuracy in work, ensuring quality in every aspect of tasks.</p>
+          <div class="strength-header">
+            <h4>Detail oriented</h4>
+            <button class="strength-toggle" aria-label="Toggle details">+</button>
+          </div>
+          <p class="strength-description">Careful attention to precision and accuracy in work, ensuring quality in every aspect of tasks.</p>
         </div>
         <div class="strength-item">
-          <h4>Team player</h4>
-          <p>Collaborative approach to work, supporting colleagues and working effectively within team environments.</p>
+          <div class="strength-header">
+            <h4>Team player</h4>
+            <button class="strength-toggle" aria-label="Toggle details">+</button>
+          </div>
+          <p class="strength-description">Collaborative approach to work, supporting colleagues and working effectively within team environments.</p>
         </div>
         <div class="strength-item">
-          <h4>Open to training</h4>
-          <p>Enthusiastic about professional development, eager to learn from mentors and embrace new methodologies.</p>
+          <div class="strength-header">
+            <h4>Open to training</h4>
+            <button class="strength-toggle" aria-label="Toggle details">+</button>
+          </div>
+          <p class="strength-description">Enthusiastic about professional development, eager to learn from mentors and embrace new methodologies.</p>
         </div>
       </div>
     </section>
@@ -131,7 +119,7 @@
       <p>IT support, PC building and maintenance, content creation, hardware troubleshooting, customer service, Hardware checkups, benchmark testing..</p>
     </section>
   </div>
-  <script src="script.js?v=2"></script>
+  <script src="script.js?v=3"></script>
   <script>
     if (!window.scrollRevealStarted) {
       window.scrollRevealStarted = true;
