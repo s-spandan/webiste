@@ -221,6 +221,12 @@ body {
   box-shadow: 0 16px 40px rgba(9, 86, 251, 0.913);
 }
 
+.contact-card a.resume-btn,
+.contact-card a.resume-btn:hover,
+.contact-card a.resume-btn:focus-visible {
+  color: #ffffff;
+}
+
 .resume-btn:hover,
 .resume-btn:focus-visible {
   background: #1d4ed8;
