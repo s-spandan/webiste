@@ -1,9 +1,9 @@
-/* External stylesheet for Spandan Sedai CV */
+/* Professional Portfolio CSS */
 :root {
   color-scheme: light;
-  color: #111;
-  background: #f5f7fb;
-  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: #1a202c;
+  background: #f8f9fa;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", sans-serif;
   line-height: 1.6;
 }
 
@@ -14,68 +14,97 @@
 body {
   margin: 0;
   min-height: 100vh;
-  background: radial-gradient(circle at top left, #d8e7ff 0%, transparent 35%),
-    radial-gradient(circle at bottom right, #ffe7d9 0%, transparent 30%),
-    #f5f7fb;
+  background: #f8f9fa;
 }
 
 .page-frame {
-  max-width: 900px;
+  max-width: 920px;
   margin: 0 auto;
-  padding: 28px 20px 40px;
+  padding: 32px 24px 48px;
 }
 
 .hero {
   display: grid;
-  gap: 24px;
-  padding: 28px 28px 22px;
-  border-radius: 24px;
+  gap: 32px;
+  padding: 48px 40px;
+  border-radius: 12px;
   background: #ffffff;
-  box-shadow: 0 16px 48px rgba(57, 111, 229, 0.454);
-  transition: filter 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
 }
 
 .hero h1 {
   margin: 0;
-  font-size: clamp(2.4rem, 4vw, 3.5rem);
-  letter-spacing: -0.05em;
+  font-size: clamp(2.2rem, 3.5vw, 3rem);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: #0f172a;
 }
 
 .eyebrow,
 .subtext {
   margin: 0;
-  color: #4b5563;
+  color: #64748b;
+  font-size: 0.95rem;
+}
+
+.eyebrow {
+  font-weight: 600;
+  color: #3b82f6;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-size: 0.85rem;
 }
 
 .contact-card {
   display: grid;
-  gap: 6px;
-  padding: 18px;
-  border-radius: 18px;
-  background: #f9fafb;
+  gap: 12px;
+  padding: 24px;
+  border-radius: 8px;
+  background: #f1f5f9;
+  border: 1px solid #e2e8f0;
 }
 
 .contact-card a {
-  color: #2563eb;
+  color: #3b82f6;
   text-decoration: none;
+  font-weight: 600;
+}
+
+.contact-card p {
+  margin: 0;
+  font-size: 0.95rem;
+  color: #334155;
+}
+
+.contact-card strong {
+  color: #0f172a;
+  font-weight: 700;
+  display: block;
+  margin-top: 8px;
+  font-size: 0.85rem;
 }
 
 .summary-section,
 .section-block,
 .card-grid {
-  margin-top: 26px;
+  margin-top: 32px;
 }
 
 .section-heading {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 14px;
+  gap: 16px;
+  margin-bottom: 24px;
 }
 
 .section-heading h2 {
   margin: 0;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #0f172a;
 }
 
 .summary-text,
@@ -83,21 +112,23 @@ body {
 .card p,
 .card li {
   margin: 0;
-  color: #374151;
+  color: #475569;
+  line-height: 1.7;
 }
 
 .card-grid {
   display: grid;
-  gap: 20px;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 24px;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
 }
 
 .card,
 .section-block {
-  border-radius: 24px;
-  padding: 24px;
+  border-radius: 8px;
+  padding: 28px;
   background: #ffffff;
-  box-shadow: 0 8px 24px rgba(17, 24, 39, 0.12), 0 2px 6px rgba(17, 24, 39, 0.08);
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
   user-select: none;
   -webkit-user-select: none;
 }
@@ -105,7 +136,10 @@ body {
 .card h3,
 .section-block h2 {
   margin-top: 0;
-  margin-bottom: 14px;
+  margin-bottom: 16px;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #0f172a;
 }
 
 .card ul {
@@ -114,56 +148,59 @@ body {
 }
 
 .card li {
-  margin-bottom: 10px;
+  margin-bottom: 12px;
 }
 
 .strengths-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 12px;
 }
 
 .strength-item {
   display: flex;
   flex-direction: column;
-  padding: 12px 16px;
-  border-radius: 12px;
-  background: #eef2ff;
-  color: #312e81;
+  padding: 14px 18px;
+  border-radius: 6px;
+  background: #eff6ff;
+  border: 1px solid #dbeafe;
+  color: #0c4a6e;
   font-size: 0.95rem;
   cursor: pointer;
   user-select: none;
   -webkit-user-select: none;
   -moz-user-select: none;
-  transition: background 0.3s ease, box-shadow 0.3s ease, max-height 0.4s ease;
+  transition: all 0.2s ease;
   overflow: hidden;
   max-height: 50px;
 }
 
 .strength-item.expanded {
   max-height: 200px;
-  background: #c7d2ff;
-  box-shadow: 0 8px 24px rgba(49, 46, 129, 0.15);
+  background: #bfdbfe;
+  border-color: #93c5fd;
+  box-shadow: 0 2px 4px rgba(12, 74, 110, 0.08);
 }
 
 .strength-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 8px;
+  gap: 12px;
 }
 
 .strength-item h4 {
   margin: 0;
   font-size: 0.95rem;
-  font-weight: 600;
+  font-weight: 700;
   flex: 1;
+  color: #0c4a6e;
 }
 
 .strength-toggle {
   background: none;
   border: none;
-  color: #312e81;
+  color: #0c4a6e;
   font-size: 1.2rem;
   cursor: pointer;
   padding: 0;
@@ -172,7 +209,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: transform 0.3s ease;
+  transition: transform 0.2s ease;
+  flex-shrink: 0;
 }
 
 .strength-item.expanded .strength-toggle {
@@ -180,11 +218,12 @@ body {
 }
 
 .strength-description {
-  margin: 8px 0 0 0;
+  margin: 10px 0 0 0;
   font-size: 0.85rem;
-  line-height: 1.4;
+  line-height: 1.5;
   opacity: 0;
-  transition: opacity 0.3s ease 0.1s;
+  transition: opacity 0.2s ease;
+  color: #0c4a6e;
 }
 
 .strength-item.expanded .strength-description {
@@ -200,25 +239,38 @@ body {
 
 .action-btn {
   border: none;
-  padding: 12px 18px;
-  border-radius: 999px;
-  background: #2563eb;
+  padding: 11px 22px;
+  border-radius: 6px;
+  background: #3b82f6;
   color: white;
   cursor: pointer;
   font-weight: 600;
+  font-size: 0.95rem;
+  transition: all 0.2s ease;
+}
+
+.action-btn:hover {
+  background: #2563eb;
+  transform: translateY(-1px);
+}
+
+.action-btn:active {
+  transform: translateY(0);
 }
 
 .resume-btn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  background: #2563eb;
+  background: #3b82f6;
   color: #ffffff;
-  padding: 14px 24px;
-  border-radius: 999px;
+  padding: 12px 26px;
+  border-radius: 6px;
   text-decoration: none;
-  transition: background 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
-  box-shadow: 0 16px 40px rgba(9, 86, 251, 0.913);
+  transition: all 0.2s ease;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
 }
 
 .contact-card a.resume-btn,
@@ -229,15 +281,19 @@ body {
 
 .resume-btn:hover,
 .resume-btn:focus-visible {
-  background: #1d4ed8;
+  background: #2563eb;
   transform: translateY(-2px);
-  box-shadow: 0 0 30px rgba(37, 99, 235, 0.35), 0 20px 50px rgba(29, 78, 216, 0.25);
+  box-shadow: 0 8px 20px rgba(59, 130, 246, 0.2);
+}
+
+.resume-btn:active {
+  transform: translateY(0);
 }
 
 .animate {
   opacity: 0;
-  transform: translateY(28px);
-  transition: opacity 0.75s ease-out, transform 0.75s ease-out;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
   will-change: opacity, transform;
 }
 
@@ -250,13 +306,13 @@ body {
   display: none;
 }
 
-/* Pop-up hover effects for card-popable elements */
+/* Card hover effects */
 .card-grid {
   position: relative;
 }
 
 .card-popable {
-  transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.4s ease, filter 0.3s ease;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   z-index: 10;
   cursor: pointer;
   user-select: none;
@@ -266,27 +322,42 @@ body {
 }
 
 .card-popable:hover {
-  transform: scale(1.08) translateY(-8px) !important;
-  box-shadow: 0 24px 48px rgba(17, 24, 39, 0.15) !important;
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
   z-index: 20;
-  transition: transform 0.5s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.5s cubic-bezier(0.34, 1.56, 0.64, 1), filter 0.3s ease;
 }
 
 .faded-out {
-  filter: grayscale(1) opacity(0.5) !important;
-  transition: filter 0.4s cubic-bezier(0.4, 0, 0.2, 1) !important;
+  filter: grayscale(1) opacity(0.5);
+  transition: filter 0.3s ease;
 }
 
 .summary-section,
 .section-block {
-  transition: filter 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: filter 0.3s ease;
 }
 
 @media (max-width: 640px) {
+  .page-frame {
+    padding: 20px 16px 36px;
+  }
 
-  .hero,
-  .footer-block {
-    padding: 22px;
+  .hero {
+    gap: 24px;
+    padding: 32px 24px;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .section-heading {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .card-grid {
+    grid-template-columns: 1fr;
   }
 
   .footer-block {
@@ -294,7 +365,11 @@ body {
     align-items: stretch;
   }
 
+  .action-btn {
+    width: 100%;
+  }
+
   .card-popable:hover {
-    transform: scale(1.05) translateY(-4px);
+    transform: translateY(-2px);
   }
 }
