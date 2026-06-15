@@ -4,201 +4,163 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Spandan Sedai - IT Professional, PC Builder & Web Designer">
-  <meta name="keywords" content="IT Support, PC Building, Web Design, Technical Support">
-  <title>Spandan Sedai | IT Professional & PC Builder</title>
-  <link rel="stylesheet" href="styles.css?v=4">
+  <meta name="description" content="Spandan Sedai - computer systems learner, PC builder, and beginner Python developer">
+  <meta name="keywords" content="PC Building, Python, Web Design, Troubleshooting, Computer Systems">
+  <title>Spandan Sedai</title>
+  <link rel="stylesheet" href="styles.css?v=5">
 </head>
 
 <body>
-  <div class="page-frame">
-    <!-- Hero Section -->
+  <main class="page-shell">
     <header class="hero animate">
-      <div>
-        <p class="eyebrow">↗ Professional Profile</p>
-        <h1>Spandan Sedai</h1>
-        <p class="subtext">Entry-level IT Support Specialist | PC Assembly & Optimization | Web Designer</p>
-      </div>
-      <div class="contact-card">
-        <p><strong>📧 Email</strong></p>
-        <p><a href="mailto:itsmespandan18@gmail.com">itsmespandan18@gmail.com</a></p>
-        <p><strong>📱 Contact</strong></p>
-        <p>+977 9814492315 (NCELL) | +977 9743200320 (NTC)</p>
-        <p style="margin-top: 16px;"><a href="resume.pdf" class="resume-btn" target="_blank" rel="noopener">📄 Download
-            Resume</a></p>
-      </div>
+      <nav class="topbar" aria-label="Primary">
+        <a class="brand" href="#top" aria-label="Spandan Sedai home">SS</a>
+        <div class="nav-links">
+          <a href="#profile">Profile</a>
+          <a href="#skills">Skills</a>
+          <a href="#learning">Learning</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </nav>
+
+      <section class="hero-grid" id="top">
+        <div class="hero-copy">
+          <p class="eyebrow">Computer systems profile</p>
+          <h1>Spandan Sedai</h1>
+          <p class="subtext">
+            PC builder and technical learner focused on reliable troubleshooting, clean system setup, and growing
+            practical Python skills.
+          </p>
+          <div class="hero-actions">
+            <a class="primary-btn" href="resume.pdf" target="_blank" rel="noopener">Download Resume</a>
+            <a class="secondary-btn" href="mailto:itsmespandan18@gmail.com">Email Me</a>
+          </div>
+        </div>
+
+        <aside class="profile-panel text-panel" aria-label="Profile snapshot">
+          <p class="panel-kicker">Now focused on</p>
+          <h2>Systems, builds, and beginner automation.</h2>
+          <div class="status-list">
+            <p><span>Focus</span> PC Assembly + Troubleshooting</p>
+            <p><span>Learning</span> Python fundamentals</p>
+            <p><span>Available</span> Entry-level opportunities</p>
+          </div>
+        </aside>
+      </section>
     </header>
 
-    <!-- Profile Section -->
-    <section class="summary-section animate">
-      <div class="section-heading">
-        <h2>Professional Profile</h2>
-        <button id="toggleDetailsBtn" class="action-btn">→ Show Details</button>
-      </div>
-      <p class="summary-text">
-        Motivated IT professional with hands-on experience in PC assembly, hardware optimization, and technical support.
-        Actively seeking an entry-level position in IT support or PC assembly to leverage technical expertise and
-        customer service skills
-        in a professional environment.
-      </p>
-      <div id="extraDetails" class="hidden">
-        <p style="margin-top: 16px; padding-top: 16px; border-top: 2px solid #e2e8f0;">
-          <strong style="color: #0f172a;">✓ Key Capabilities:</strong><br />
-          Experienced in hardware assembly, BIOS configuration, software installation, system troubleshooting, and
-          performance optimization.
-          Comfortable diagnosing hardware issues, installing operating systems, and supporting end-users through
-          technical problems.
-          Strong understanding of PC components, compatibility, and system requirements.
-        </p>
+    <section class="intro-section animate" id="profile">
+      <div class="section-kicker">Profile</div>
+      <div class="intro-grid">
+        <h2>Building a practical foundation in systems, hardware, and code.</h2>
+        <div>
+          <p>
+            I am a computer-focused student with hands-on experience assembling custom PCs, installing Windows, configuring
+            BIOS/UEFI settings, and solving common hardware and software issues.
+          </p>
+          <p>
+            Alongside technical practice, I am learning Python to strengthen my problem-solving, automation, and programming
+            fundamentals.
+          </p>
+        </div>
       </div>
     </section>
 
-    <!-- Skills Grid -->
-    <section class="card-grid animate">
-      <article class="card card-popable">
-        <h3>💻 Technical Skills</h3>
+    <section class="focus-grid animate" id="skills">
+      <article class="feature-card">
+        <span class="card-label">01</span>
+        <h3>Computer Help</h3>
         <ul>
-          <li>PC Building & Hardware Assembly</li>
-          <li>BIOS/UEFI Configuration</li>
-          <li>Windows OS Installation & Configuration</li>
-          <li>Hardware Troubleshooting & Diagnostics</li>
-          <li>System Performance Optimization</li>
-          <li>Network Basics & Connectivity</li>
-          <li>Benchmarking & Performance Testing</li>
-          <li>Web Design & Frontend Basics</li>
-          <li>HTML5, CSS3 & JavaScript</li>
+          <li>Windows installation and setup</li>
+          <li>Hardware diagnostics</li>
+          <li>Basic networking and connectivity</li>
+          <li>User-focused troubleshooting</li>
         </ul>
       </article>
 
-      <article class="card card-popable">
-        <h3>⚡ Experience & Achievements</h3>
-        <p><strong style="color: #0f172a;">PC Builder / Tech Support</strong></p>
+      <article class="feature-card">
+        <span class="card-label">02</span>
+        <h3>PC Building</h3>
         <ul>
-          <li>Assembled 20+ custom PC systems with optimized component selection</li>
-          <li>2+ years hands-on experience in PC building and hardware support</li>
-          <li>Resolved complex hardware compatibility and performance issues</li>
-          <li>Tested and validated system performance through benchmarking</li>
-          <li>Provided technical support and guidance to friends and peers</li>
-          <li>Created technical content and design documentation</li>
+          <li>Component selection and compatibility checks</li>
+          <li>PC assembly and cable management</li>
+          <li>BIOS/UEFI configuration</li>
+          <li>Benchmarking and performance tuning</li>
         </ul>
       </article>
 
-      <article class="card card-popable">
-        <h3>🎓 Education & Development</h3>
-        <p><strong style="color: #0f172a;">Pursuing B.CSIT</strong></p>
-        <p style="margin-top: 8px;">Bachelors in Computer Software and Information Technology from Shubhashree College
-          (Currently Enrolled)</p>
-        <p><strong style="color: #0f172a; margin-top: 16px;">+2 Graduate</strong></p>
-        <p style="margin-top: 8px;">Higher Secondary Education with focus on Computer Science from Mid Valley SS College
-        </p>
+      <article class="feature-card">
+        <span class="card-label">03</span>
+        <h3>Web Basics</h3>
+        <ul>
+          <li>HTML and CSS page structure</li>
+          <li>Responsive layout basics</li>
+          <li>Beginner JavaScript interactions</li>
+          <li>Simple portfolio and content pages</li>
+        </ul>
       </article>
     </section>
 
-    <!-- Strengths Section -->
-    <section class="section-block animate">
-      <h2>Core Strengths</h2>
-      <div class="strengths-list">
-        <div class="strength-item">
-          <div class="strength-header">
-            <h4>Quick Learner</h4>
-            <button class="strength-toggle" aria-label="Toggle details">+</button>
-          </div>
-          <p class="strength-description">Rapidly acquires new technical skills and knowledge. Adaptable to different
-            technologies, tools, and work environments with minimal onboarding time.</p>
+    <section class="learning-section animate" id="learning">
+      <div class="section-kicker">Current Learning</div>
+      <div class="learning-card">
+        <div>
+          <h2>Learning Python step by step</h2>
+          <p>
+            I am practicing Python fundamentals including variables, loops, functions, lists, dictionaries, file
+            handling, and small automation scripts. My goal is to use Python for useful computer tasks such as organizing
+            files, checking system information, and building simple troubleshooting tools.
+          </p>
         </div>
-        <div class="strength-item">
-          <div class="strength-header">
-            <h4>Responsible</h4>
-            <button class="strength-toggle" aria-label="Toggle details">+</button>
+        <div class="progress-stack" aria-label="Learning progress">
+          <div class="progress-row">
+            <span>Syntax basics</span>
+            <strong>Practicing</strong>
           </div>
-          <p class="strength-description">Dependable and accountable for all assigned tasks. Takes ownership of
-            problems, delivers reliable solutions consistently, and meets deadlines.</p>
-        </div>
-        <div class="strength-item">
-          <div class="strength-header">
-            <h4>Detail Oriented</h4>
-            <button class="strength-toggle" aria-label="Toggle details">+</button>
+          <div class="progress-row">
+            <span>Functions</span>
+            <strong>Practicing</strong>
           </div>
-          <p class="strength-description">Meticulous attention to precision and accuracy in technical work. Ensures
-            quality in every aspect of hardware assembly, configuration, and documentation.</p>
-        </div>
-        <div class="strength-item">
-          <div class="strength-header">
-            <h4>Team Player</h4>
-            <button class="strength-toggle" aria-label="Toggle details">+</button>
+          <div class="progress-row">
+            <span>Automation</span>
+            <strong>Next</strong>
           </div>
-          <p class="strength-description">Collaborative approach to problem-solving. Works effectively within teams,
-            supports colleagues, and contributes to positive team dynamics.</p>
-        </div>
-        <div class="strength-item">
-          <div class="strength-header">
-            <h4>Open to Training</h4>
-            <button class="strength-toggle" aria-label="Toggle details">+</button>
-          </div>
-          <p class="strength-description">Enthusiastic about professional development and continuous learning. Eager to
-            learn from mentors, embrace new methodologies, and stay updated with industry trends.</p>
-        </div>
-        <div class="strength-item">
-          <div class="strength-header">
-            <h4>Problem Solver</h4>
-            <button class="strength-toggle" aria-label="Toggle details">+</button>
-          </div>
-          <p class="strength-description">Analytical approach to troubleshooting complex technical issues. Uses logical
-            thinking and systematic methods to identify root causes and implement effective solutions.</p>
         </div>
       </div>
     </section>
 
-    <!-- Interests & Focus Areas -->
-    <section class="section-block animate">
-      <h2>Professional Interests</h2>
-      <p>
-        My passion lies in <strong>IT support and technical problem-solving</strong>. I'm particularly interested in:
-      </p>
-      <ul style="margin-top: 16px; line-height: 2;">
-        <li>✓ PC Building, Hardware Assembly & System Optimization</li>
-        <li>✓ Technical Support & Customer Service Excellence</li>
-        <li>✓ Hardware Troubleshooting & Diagnostics</li>
-        <li>✓ Content Creation & Technical Documentation</li>
-        <li>✓ Continuous Learning & Professional Growth</li>
-        <li>✓ Contributing to Technology Communities</li>
-      </ul>
+    <section class="details-grid animate">
+      <article class="detail-block">
+        <h2>Experience</h2>
+        <p>
+          Built and configured custom desktop systems for friends and peers, including component installation, OS setup,
+          driver installation, performance checks, and troubleshooting.
+        </p>
+      </article>
+
+      <article class="detail-block">
+        <h2>Education</h2>
+        <p>
+          Pursuing B.CSIT at Shubhashree College. Completed +2 with a Computer Science focus from Mid Valley SS
+          College.
+        </p>
+      </article>
     </section>
 
-    <!-- Call to Action Footer -->
-    <div class="footer-block">
+    <footer class="contact-footer animate" id="contact">
       <div>
-        <p style="margin: 0; color: #475569; font-weight: 500;">Ready to contribute your technical expertise to your
-          team</p>
+        <p class="section-kicker">Contact</p>
+        <h2>Ready to learn, build, and contribute.</h2>
       </div>
-      <a href="mailto:itsmespandan18@gmail.com" class="action-btn">Get in Touch →</a>
-    </div>
-  </div>
+      <div class="contact-links">
+        <a href="mailto:itsmespandan18@gmail.com">itsmespandan18@gmail.com</a>
+        <span>+977 9814492315</span>
+        <span>+977 9743200320</span>
+      </div>
+    </footer>
+  </main>
 
-  <!-- Scripts -->
-  <script src="script.js?v=4"></script>
-  <script>
-    if (!window.scrollRevealStarted) {
-      window.scrollRevealStarted = true;
-      const animatedElements = document.querySelectorAll('.animate');
-
-      if ('IntersectionObserver' in window) {
-        const observer = new IntersectionObserver(entries => {
-          entries.forEach(entry => {
-            if (entry.isIntersecting) {
-              entry.target.classList.add('animate-visible');
-            } else {
-              entry.target.classList.remove('animate-visible');
-            }
-          });
-        }, { threshold: 0.16 });
-
-        animatedElements.forEach(element => observer.observe(element));
-      } else {
-        animatedElements.forEach(el => el.classList.add('animate-visible'));
-      }
-    }
-  </script>
+  <script src="script.js?v=5"></script>
 </body>
 
 </html>
