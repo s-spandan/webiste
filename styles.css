@@ -341,6 +341,11 @@ h2 {
   margin-top: 18px;
 }
 
+.skill-card-kicker {
+  display: block;
+  margin-top: 34px;
+}
+
 .progress-stack {
   background: rgba(255, 255, 255, 0.08);
   border: 1px solid rgba(255, 255, 255, 0.14);
